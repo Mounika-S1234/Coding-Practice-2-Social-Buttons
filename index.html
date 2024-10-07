@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+  </head>
+  <body>
+    <div id="root">
+ 
+    <script type="text/babel">
+      
+       
+const Button = ({label, backgroundColor}) => (
+  <button className='social-button' style={{backgroundColor}}>
+    {label}
+  </button>
+)
+    
+const App = () => (
+  <div className='social-buttons-container'>
+  <img src="https://assets.ccbp.in/frontend/react-js/social-buttons-bg.png"/>
+    <h1 className='heading'>Social Buttons</h1>
+    <div className='buttons-container'>
+      <Button label='Like' backgroundColor='#eab308' />
+      <Button label='Comment' backgroundColor='#ffffff' />
+      <Button label='Share' backgroundColor='#1d4ed8' />
+    </div>
+  </div>
+)
+
+ReactDOM.render(<App />, document.getElementById('root'))
+  
+  </script>
+  </body>
+</html>

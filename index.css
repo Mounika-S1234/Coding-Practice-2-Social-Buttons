@@ -1,0 +1,58 @@
+/* Base styles */
+
+.heading {
+  font-family: 'Bree Serif', serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #323f4b;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive styles */
+@media (min-width: 576px) {
+  .social-button {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .social-button {
+    font-size: 20px;
+    padding: 14px 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  .social-button {
+    font-size: 22px;
+    padding: 16px 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social-button {
+    font-size: 24px;
+    padding: 18px 36px;
+  }
+}
